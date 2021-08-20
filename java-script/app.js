@@ -95,7 +95,9 @@ document.getElementById('submit').addEventListener
         document.getElementById('offer').innerText = offerPrice;
     }
     else{
-        console.log('get your own kakku')
+        document.getElementById('not-vatija').style.display='block';
+        document.getElementById('no-offer').innerText = document.getElementById('total').innerText;
+        document.getElementById('vatija').style.display='none';
     }
     document.getElementById('code').value = '';
 })
