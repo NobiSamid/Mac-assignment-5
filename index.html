@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Buy mac</title>
 </head>
 <body>
     <header></header>
-    <main>
+    <main class="class=grid grid-cols-3 gap-1">
         <section>
             <img src="images/mac.png" alt="Mac" srcset="">
         </section>
         <section>
             <div>
-                <h1>Customize your blue 24-inch iMac with Apple M1 chip.</h1>
+                <h1 class="text-5xl" >Customize your blue 24-inch iMac with Apple M1 chip.</h1>
                 <p>Apple M1 chip with 8 core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unifield memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouce Keyboard-US English</p>
             </div>
             <div>
-                <h3>Memory</h3>
-                <button>8GB unified memory</button>
-                <button>16GB unified memory</button>
+                <h3 class="text-2xl">Memory</h3>
+                <button id="8gb" class="p-1 mx-2 border-2 cursor-pointer hover:border-purple-600 rounded">8GB unified memory</button>
+                <button id="16gb" class="p-1 mx-2 border-2 cursor-pointer hover:border-purple-600 rounded">16GB unified memory</button>
             </div>
             <div>
-                <h3>Storage</h3>
-                <button>256GB SSD storage</button>
-                <button>512GB SSD storage</button>
-                <button>1TB SSD storage</button>
+                <h3 class="text-2xl">Storage</h3>
+                <button id="256gb" class="p-1 mx-2 border-2 cursor-pointer hover:border-purple-600 rounded">256GB SSD storage</button>
+                <button id="512gb" class="p-1 mx-2 border-2 cursor-pointer hover:border-purple-600 rounded">512GB SSD storage</button>
+                <button id="1tb" class="p-1 mx-2 border-2 cursor-pointer hover:border-purple-600 rounded">1TB SSD storage</button>
             </div>
             <div>
-                <h3>Chose your delivery option</h3>
-                <button>Friday,Aug 25 FREE Prime Delivery</button>
-                <button>Friday,Aug 21 Delivery charge $20</button>
+                <h3 class="text-2xl">Chose your delivery option</h3>
+                <button id="25aug" class="p-1 mx-2 border-2 cursor-pointer hover:border-purple-600 rounded">Friday,Aug 25 FREE Prime Delivery</button>
+                <button id="21aug" class="p-1 mx-2 border-2 cursor-pointer hover:border-purple-600 rounded">Friday,Aug 21 Delivery charge $20</button>
             </div>
-            <div>
+            <div class="grid grid-cols-3 gap-4">
                 <div>
                     <h5>Best Price</h5>
                     <h5>Extra Memory Cost</h5>
@@ -43,21 +44,21 @@
                 </div>
                 <div>
                     <h5>$ <span>1299</span></h5>
-                    <h5>$ <span>0</span></h5>
-                    <h5>$ <span>0</span></h5>
-                    <h5>$ <span>0</span></h5>
-                    <h5>$ <span>1299</span></h5>
+                    <h5>$ <span id="memory">0</span></h5>
+                    <h5>$ <span id="storage">0</span></h5>
+                    <h5>$ <span id="delivery">0</span></h5>
+                    <h5>$ <span id="total">1299</span></h5>
                 </div>
             </div>
             <div>
                 <h6>Add Promo code</h6>
-                <input type="text">
-                <button>Apply</button>
+                <input id="code" type="text" class="p-1 mx-2 border-2 cursor-text focus:ring-2 focus:ring-blue-600 rounded">
+                <button id="submit" class="p-1 mx-2 border-2 cursor-pointer hover:border-red-600 rounded">Apply</button>
             </div>
         </section>
     </main>
     <footer>
-        <h1>Total: $ <span>1299</span></h1>
+        <h1>Total: $ <span id="offer">1299</span></h1>
     </footer>
     <script src="java-script/app.js"></script>
 </body>
