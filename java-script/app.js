@@ -8,7 +8,7 @@ document.getElementById('8gb').addEventListener
 
 document.getElementById('16gb').addEventListener
 ('click', function(){
-    memory(80)
+    memory(180)
     totalCost()
 })
 
@@ -80,6 +80,8 @@ function totalCost(){
     const total = 1299 + memoryPrice + storagePrice + deliveryCost;
     const updatePriceTo = document.getElementById('total');
     updatePriceTo.innerText =total;
+    const updatePricetoPromo = document.getElementById('offer');
+    updatePricetoPromo.innerText = total;
 }
 
 ////////////PROMO CODE SECTION ////////////////
