@@ -95,11 +95,15 @@ document.getElementById('submit').addEventListener
         const offerPrice = totalPrice * (80/100) ;
         console.log(offerPrice)
         document.getElementById('offer').innerText = offerPrice;
+        document.getElementById('submit').disabled = true;
+        document.getElementById('submit').style.color = 'green';
     }
     else{
         document.getElementById('not-vatija').style.display='block';
         document.getElementById('no-offer').innerText = document.getElementById('total').innerText;
         document.getElementById('vatija').style.display='none';
+        document.getElementById('submit').disabled = true;
+        document.getElementById('submit').style.color = 'red';
     }
     document.getElementById('code').value = '';
 })
