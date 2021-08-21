@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------------------------- Tailwind link --------------------->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Buy mac</title>
 </head>
@@ -11,30 +12,40 @@
     <header></header>
     <main class="class=grid grid-cols-3 gap-1 flex flex-row mt-8">
         <section class="ml-8">
-            <img src="images/mac.png" width="80%" alt="Mac" srcset="">
+            <img src="images/mac.png" width="100%" alt="Mac" srcset="">
         </section>
         <section class="mr-8">
+            <!------------------ product details ------------>
             <div class="m-6">
                 <h1 class="text-5xl font-semibold my-4" >Customize your blue 24-inch iMac with Apple M1 chip.</h1>
                 <p class="text-xl my-4">Apple M1 chip with 8 core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unifield memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouce Keyboard-US English.</p>
             </div>
+
+            <!-------------------- Memory Section ------------->
             <div class="m-6">
                 <h3 class="mb-2 text-3xl font-medium">Memory</h3>
                 <button id="8gb" class="font-medium p-1 mx-2 border-2 border-blue-500 hover:border-yellow-300 cursor-pointer rounded focus:bg-green-200 focus:border-green-500">8GB unified memory</button>
                 <button id="16gb" class="font-medium p-1 mx-2 border-2 border-blue-500 hover:border-yellow-300 cursor-pointer rounded focus:bg-green-200 focus:border-green-500">16GB unified memory</button>
             </div>
+
+            <!---------------------- Storage section ------------------>
             <div class="m-6">
                 <h3 class="mb-2 text-3xl font-medium">Storage</h3>
                 <button id="256gb" class="font-medium p-1 mx-2 border-2 border-blue-500 hover:border-yellow-300 cursor-pointer rounded focus:bg-green-200 focus:border-green-500">256GB SSD storage</button>
                 <button id="512gb" class="font-medium p-1 mx-2 border-2 border-blue-500 hover:border-yellow-300 cursor-pointer rounded focus:bg-green-200 focus:border-green-500">512GB SSD storage</button>
                 <button id="1tb" class="font-medium p-1 mx-2 border-2 border-blue-500 hover:border-yellow-300 cursor-pointer rounded focus:bg-green-200 focus:border-green-500">1TB SSD storage</button>
             </div>
+
+            <!---------------------- Delivery Section ------------------>
             <div class="m-6">
                 <h3 class="mb-2 text-3xl font-medium">Chose your delivery option</h3>
                 <button id="25aug" class="font-medium p-1 mx-2 border-2 border-blue-500 hover:border-yellow-300 cursor-pointer rounded focus:bg-green-200 focus:border-green-500">Friday,Aug 25 FREE Prime Delivery</button>
                 <button id="21aug" class="font-medium p-1 mx-2 border-2 border-blue-500 hover:border-yellow-300 cursor-pointer rounded focus:bg-green-200 focus:border-green-500">Friday,Aug 21 Delivery charge $20</button>
             </div>
+
+            <!---------------------------- Money ricipt ---------------->
             <div class="grid grid-cols-3 gap-4 m-8">
+                <!------------------------ field of cost --------------->
                 <div>
                     <h5 class="text-lg font-medium">Best Price</h5>
                     <h5 class="text-lg font-medium">Extra Memory Cost</h5>
@@ -43,6 +54,7 @@
                     <h5 class="text-2xl font-medium">Total Price</h5>
                 </div>
                 <div>
+                    <!-------------------- Price Amount ----------------------->
                     <h5 class="text-lg font-medium">$ <span>1299</span></h5>
                     <h5 class="text-lg font-medium">$ <span id="memory">0</span></h5>
                     <h5 class="text-lg font-medium">$ <span id="storage">0</span></h5>
@@ -50,6 +62,8 @@
                     <h5 class="text-2xl font-medium">$ <span id="total">1299</span></h5>
                 </div>
             </div>
+
+            <!-------------------------- Promo Code section -------------------------->
             <div class="mb-4">
                 <h6 class="font-medium">Add Promo code</h6>
                 <input id="code" type="text" class="p-1 mx-2 border-2 border-yellow-300 cursor-text focul:border-3 rounded">
@@ -58,9 +72,11 @@
         </section>
     </main>
     <footer>
+        <!--------------------- Price after using Promo code -------------------->
         <hr><h1 id="vatija" class=" mt-8 mb-4 text-center text-4xl font-medium">Total: $ <span id="offer">1299</span></h1>
         <h1 style="display: none;" id="not-vatija" class=" mt-8 mb-4 text-center text-4xl font-medium">You are not Vatija of Steve Kaku, so you have to pay $ <span id="no-offer">1299</span></h1>
     </footer>
+    <!--------------------------------- jAVA Script add  -------------------->
     <script src="java-script/app.js"></script>
 </body>
 </html>
